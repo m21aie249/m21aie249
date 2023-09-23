@@ -10,6 +10,18 @@ Only one docker image [1][3] is created hosting all three services nginx+php-fpm
 
 Nginx and PHP interaction tested OK, but application does not work in this submission due to PHP not able to talk to MySQL within the container. 
 
+To Build:
+
+git clone git@github.com:m21aie249/m21aie249.git
+
+cd docker
+
+docker build -t mysql:mysql1.0 .
+
+To Run:
+
+docker run -d -p 9090:80 -p 3066:3066 mysql:mysql1.0 
+
 
 References / Acknowledgements:
 
